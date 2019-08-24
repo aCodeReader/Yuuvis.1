@@ -1,3 +1,6 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 
 public class Case 
@@ -84,7 +87,20 @@ public class Case
 		this.courtsInvolved = courtsInvolved;
 	}
 
-	
+	public void readCase(String s)
+	{
+		caseData.add(s);
+	}
+	public void printData(PrintStream o) throws IOException
+	{
+		FileWriter w = new FileWriter("dump.txt");
+		for (String s: caseData)
+		{
+			o.println(s);
+			w.write(s);
+		}
+		w.close();
+	}
 	//toString
 	public String toString()
 	{

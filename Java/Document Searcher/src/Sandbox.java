@@ -9,15 +9,28 @@ public class Sandbox
 	static Case readFile(File f) throws FileNotFoundException
 	{
 		Scanner s = new Scanner(f);
-		ArrayList<String> headers = new ArrayList<>();
+		ArrayList<String> headers = new ArrayList<String>();
+		ArrayList<String> data = new ArrayList<String>();
 		String line = s.nextLine();
-		while (!line.equalsIgnoreCase("syllabus")) {
+		while (!line.equalsIgnoreCase("syllabus")) 
+		{
 			headers.add(line);
-			if (s.hasNextLine()) {
+			if (s.hasNextLine()) 
+			{
 				line = s.nextLine();
 			}
-			else {
+			else 
+			{
 				break;
+			}
+			if (line.equalsIgnoreCase("syllabus"))
+			{
+				do
+				{
+					line= s.nextLine();
+					data.add(line);
+				}
+				while (s.hasNextLine());
 			}
 		}
 				
@@ -35,7 +48,6 @@ public class Sandbox
 		String decided = headers.get(5);
 		String courtsInvolved = headers.get(7) + "; " + headers.get(8);
 		
-		ArrayList<String> details = new ArrayList<String>();
 		
 		s.close();
 				
@@ -52,12 +64,18 @@ public class Sandbox
 					volume,
 					courtsInvolved
 				);
+		for (String x: data)
+		{
+			ret.readCase(x);
+		}
 		return ret;
 	}
-	public static void main(String[] args) throws FileNotFoundException 
+	public static void main(String[] args) throws IOException 
 	{
 		// TODO Auto-generated method stub
-		Case a_case = readFile(new File("case_1.txt"));
+		jOut.println("initializing");
+		Case a_case = readFile(new File("Case.txt"));
+		a_case.printData(jOut);
 		System.out.println(a_case);
 	}
 
