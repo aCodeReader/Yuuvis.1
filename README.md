@@ -4,6 +4,7 @@
 
 
 Xlegic SinAustin - Team Lead, Data Scientist / ML 
+
 Jacob Schaefer - Front End Developer 
 Jeff Pape - Back End Developer 
 Alan Ngo - Back End Developer 
