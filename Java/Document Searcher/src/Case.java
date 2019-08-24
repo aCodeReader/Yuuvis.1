@@ -13,24 +13,25 @@ public class Case
 	private ArrayList<String> caseData; //regex check
 	
 	public Case(
-			String s0,
-			String s1,
-			String s2,
-			String s3,
-			String s4,
-			String s5,
-			String s6,
-			String s7
+			String judge,
+			String summary,
+			String plaintiff,
+			String defendant,
+			String pageNumbers,
+			String argued,
+			String decided,
+			String key,
+			String courtsInvolved
 			)
 	{
-		setJudge(s0);
-		setSummary(s1);
-		setPlantiff(s2);
-		setDefendant(s3);
-		setArguedDate(s4);
-		setDecidedDate(s5);
-		setKey(s6);
-		setCourtsInvolved(s7);
+		setJudge(judge);
+		setSummary(summary);
+		setPlaintiff(plaintiff);
+		setDefendant(defendant);
+		setArguedDate(argued);
+		setDecidedDate(decided);
+		setKey(key);
+		setCourtsInvolved(courtsInvolved);
 		caseData = new ArrayList<String>();
 	}
 	//getters and setters
@@ -55,7 +56,7 @@ public class Case
 	public String getPlantiff() {
 		return plantiff;
 	}
-	public void setPlantiff(String plantiff) {
+	public void setPlaintiff(String plantiff) {
 		this.plantiff = plantiff;
 	}
 	public String getArguedDate() {
