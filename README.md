@@ -3,8 +3,8 @@
 
 
 
-Xlegic SinAustin - Team Lead, Data Scientist / ML
-Jacob Schaefer - Front End Developer
-Jeff Pape - Back End Developer
-Alan Ngo - Back End Developer
-Liberty Gallagher - UX Designer
+Xlegic SinAustin - Team Lead, Data Scientist / ML \n
+Jacob Schaefer - Front End Developer \n
+Jeff Pape - Back End Developer \n
+Alan Ngo - Back End Developer \n
+Liberty Gallagher - UX Designer \n
