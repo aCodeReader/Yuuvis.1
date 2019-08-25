@@ -1,0 +1,60 @@
+____________________________________
+ID: 0
+Title: United States v. Wong Kim Ark, 169 U.S. 649 (1898)
+Defendant:  Wong Kim Ark
+Plaintiff: United States 
+Judge: ﻿U.S. Supreme Court
+Argued Date: Argued March 5, 8, 1897
+Decided Date: Decided March 28, 1898
+Courts Involved: APPEAL FROM THE DISTRICT COURT OF THE UNITED STATES; FOR THE NORTHERN DISTRICT OF CALIFORNIA
+____________________________________
+____________________________________
+ID: 1
+Title: Kwong Hai Chew v. Colding, 344 U.S. 590 (1953)
+Defendant:  Colding
+Plaintiff: Kwong Hai Chew 
+Judge: ﻿U.S. Supreme Court
+Argued Date: Argued October 17, 1952
+Decided Date: Decided February 9, 1953
+Courts Involved: CERTIORARI TO THE UNITED STATES COURT OF APPEALS; FOR THE SECOND CIRCUIT
+____________________________________
+____________________________________
+ID: 2
+Title: INS v. Delgado, 466 U.S. 210 (1984)
+Defendant:  Delgado
+Plaintiff: INS 
+Judge: ﻿U.S. Supreme Court
+Argued Date: Argued January 11, 1984
+Decided Date: Decided April 17, 1984
+Courts Involved: CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR; THE NINTH CIRCUIT
+____________________________________
+____________________________________
+ID: 3
+Title: Shaughnessy v. Mezei, 345 U.S. 206 (1953)
+Defendant:  Mezei
+Plaintiff: Shaughnessy 
+Judge: ﻿U.S. Supreme Court
+Argued Date: Argued January 7-8, 1953
+Decided Date: Decided March 16, 1953
+Courts Involved: CERTIORARI TO THE UNITED STATES COURT OF APPEALS; FOR THE SECOND CIRCUIT
+____________________________________
+____________________________________
+ID: 4
+Title: INS v. Lopez-Mendoza, 468 U.S. 1032 (1984)
+Defendant:  Lopez-Mendoza
+Plaintiff: INS 
+Judge: ﻿U.S. Supreme Court
+Argued Date: Argued April 18, 1984
+Decided Date: Decided July 5, 1984
+Courts Involved: CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR; THE NINTH CIRCUIT
+____________________________________
+____________________________________
+ID: 5
+Title: INS v. Cardoza-Fonseca, 480 U.S. 421 (1987)
+Defendant:  Cardoza-Fonseca
+Plaintiff: INS 
+Judge: ﻿U.S. Supreme Court
+Argued Date: Argued October 7, 1986
+Decided Date: Decided March 9, 1987
+Courts Involved: CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR; THE NINTH CIRCUIT
+____________________________________
