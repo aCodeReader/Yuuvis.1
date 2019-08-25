@@ -97,7 +97,7 @@ public class Case
 		for (String s: caseData)
 		{
 			o.println(s);
-			w.write(s);
+			w.write(s+"\n");
 		}
 		w.close();
 	}
