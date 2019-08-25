@@ -4,15 +4,15 @@ import java.util.Map.Entry;
 
 public class CaseHandler 
 {
-	private final int ID = 10000000;
 	private HashMap<Integer, Case> database; //ID, Case
-	private Random rand;
+	
 	public CaseHandler() //constructor
 	{
 		database = new HashMap<Integer, Case>();
-		rand = new Random();
 	}
-	public Case readFile(File f) throws IOException
+	
+	//helper functions
+	private Case readFile(File f) throws IOException
 	{
 		Scanner s = new Scanner(f);
 		ArrayList<String> headers = new ArrayList<String>();
@@ -78,13 +78,42 @@ public class CaseHandler
 	}
 	private int generateID()
 	{
-		int key = rand.nextInt(ID);
-		Integer x = new Integer(key);
-		if (!database.containsKey(x))
+		int id = 0;
+		for (int i =100000000; i>=0; i--)
 		{
-			return key;
-		}	
-		return generateID();
+			if (!database.containsKey(new Integer(i)))
+			{
+				id =i;
+			}
+		}
+		
+		return id;
+	}
+	
+	//public functions
+	/**
+	 * TODO
+	 * searchBySubstring(String exp)->List<Case>
+	 * searchByJudge(String exp)->List<Case> DONE
+	 * 
+	 * */
+	public Case getCase(Integer id)
+	{
+		return database.get(id);
+	}
+	public ArrayList<Case>searchByJudge(String str)
+	{
+		ArrayList<Case>ret = new ArrayList<Case>();
+		for (Entry<Integer, Case> entry: database.entrySet())
+		{
+			Case c = entry.getValue();
+			if (c.getJudge().contains(str))
+			{
+				ret.add(c);
+			}
+		}
+		return ret;
+		
 	}
 	public void loadCases(String fileName) throws IOException
 	{
@@ -126,4 +155,5 @@ public class CaseHandler
 		}
 		w.close();
 	}
+
 }

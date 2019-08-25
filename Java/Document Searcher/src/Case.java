@@ -2,6 +2,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Case 
 {
@@ -91,15 +92,33 @@ public class Case
 	{
 		caseData.add(s);
 	}
-	public void printData(PrintStream o) throws IOException
+	public ArrayList<String>getKeyWords()
 	{
-		FileWriter w = new FileWriter("dump.txt");
-		for (String s: caseData)
+		ArrayList<String> ret = new ArrayList<String>();
+		for (int i =0; i<caseData.size(); i++)
 		{
-			o.println(s);
-			w.write(s+"\n");
+			if (caseData.get(i).startsWith("\""))
+			{
+				ret.add(caseData.get(i));
+			}
+		}
+		return ret;
+	}
+	private void writeTo(String x, Collection<String> c) throws IOException
+	{
+		FileWriter w = new FileWriter(x);
+		int i =0;
+		for (String s: c)
+		{
+			w.write(i+": "+s+"\n");
+			i++;
 		}
 		w.close();
+	}
+	public void printData() throws IOException
+	{
+		writeTo("CaseDetails.txt", caseData);
+		writeTo("CaseKeywords.txt", getKeyWords());
 	}
 	//toString
 	public String toString()
