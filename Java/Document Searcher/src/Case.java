@@ -1,6 +1,5 @@
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -95,7 +94,7 @@ public class Case
 	public ArrayList<String>getKeyWords()
 	{
 		ArrayList<String> ret = new ArrayList<String>();
-		for (int i =0; i<caseData.size(); i++)
+		for (int i =0; i<20; i++)
 		{
 			if (caseData.get(i).startsWith("\""))
 			{
