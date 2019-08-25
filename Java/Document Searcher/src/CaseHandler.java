@@ -151,6 +151,7 @@ public class CaseHandler
 			w.write("Argued Date: "+entry.getValue().getArguedDate()+"\n");
 			w.write("Decided Date: "+entry.getValue().getDecidedDate()+"\n");
 			w.write("Courts Involved: "+entry.getValue().getCourtsInvolved()+"\n");
+			w.write("Comments: "+entry.getValue().getKeyWords()+"\n");
 			w.write("____________________________________\n");
 		}
 		w.close();

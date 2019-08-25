@@ -94,11 +94,11 @@ public class Case
 	public ArrayList<String>getKeyWords()
 	{
 		ArrayList<String> ret = new ArrayList<String>();
-		for (int i =0; i<20; i++)
+		for (int i =0; i<caseData.size(); i++)
 		{
 			if (caseData.get(i).startsWith("\""))
 			{
-				ret.add(caseData.get(i));
+				ret.add(caseData.get(i)+"\n");
 			}
 		}
 		return ret;
